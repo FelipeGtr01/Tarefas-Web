@@ -1,0 +1,29 @@
+.body{
+    background-color: white;
+}
+
+.container{
+    background-color: #4B0082;
+    text-align: center;
+}
+
+.formulário{
+    background-color: blueviolet;
+    padding: 20%;
+    margin: 3%;
+}
+
+.inputbox{
+    position: absolute;
+}
+
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}

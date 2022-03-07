@@ -4,55 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Tarefa 03 </title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <font face="arial" color="white">
-        <div class="container">
-            <font color="yellow">
-                <h1>
-                    Games lovers Enquete
-                </h1>
-            </font>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Games lovers Enquete
+            </h1>
+        </div>
+        <div class="texto">
+            <h2>
+                <p>
+                    Estamos escolhendo nessa enquete os melhores estilos de jogos entre os
+                    afixionados por vídeo games. Participe da nossa enquete e escolha entre os três
+                    finalistas!
+                </p>
+                <p>
+                    A sua escolha é muito importante para nós.
+                </p>
+                <p>
+                    No final da enquete iremos sortear um brinde entre os participantes.
+                </p>
+            </h2>
             
-            <p>
-                Estamos escolhendo nessa enquete os meslhores estilos de jogos entre os
-                afixionados por vídeo games. Participe da nossa enquete e escolha entre os três
-                finalistas!
-            </p>
-            <p>
-                A sua escolha é muito importante para nós.
-            </p>
-            <p>
-                No final da enquete iremos sortear um brinde entre os participantes.
-            </p>
+        </div>
 
-            <div class="formulário">
-                <h2>
-                    Digite os seus dados e escolha os três finalistas!
-                </h2>
-
-                <form>
-                        <div class="inputbox">
-                            <label>NOME</label>
-                            <input type="text" name="nome" id="nome" class="inputuser" required>
-                            <label for="nome" class="labelinput">Nome completo</label>
-                        </div>
-                
-                        <div>
-                            <label>EMAIL</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                </form>
-
-                <div>
-
+        <div class="formulario">
+                <div class="titulo2">
+                    <h1>
+                        Digite os seus dados e escolha os três finalistas!
+                    </h1>                    
                 </div>
 
-            </div>
+                <form>
+                    <div class="inputbox">
+                        <input type="text" name="nome" id="nome" class="inputbox" placeholder="Digite seu nome" required>
+                    </div>
+                    <br>               
+                    <div class="inputbox">
+                        <input type="text" name="email" id="email" class="inputbox" placeholder="Digite seu email" required>
+                    </div>
+                    <br><br>
 
+                    <div class="votar-principal">
+                        <div class="votar">
+                            <h2> Esportes </h2>
+                            <br>
+                            <img src="assets/soccer-ball.png" alt="Bola de futebol"> 
+                            <br><br>                               
+                            <input type="submit" name="submit" id="submit" value="Votar">
+                        </div>                        
+                        <div class="votar">
+                            <h2> Simulação </h2>
+                            <br>
+                            <img src="assets/plane.png" alt="Avião">
+                            <br><br>
+                            <input type="submit" name="submit" id="submit" value="Votar">
+                        </div>                        
+                        <div class="votar">
+                            <h2> Estratégia </h2>
+                            <br>
+                            <img src="assets/head.png" alt="Cabeça com engrenagem">
+                            <br><br>
+                            <input type="submit" name="submit" id="submit" value="Votar">
+                        </div>
+                    </div>
+                </form>
+
+                
         </div>
-    </font>
+
+        <div class="footer">
+            <h3> @Desenvolvido por GameTechLover </h3>
+        </div>
+    </div> 
 </body>
 </html>

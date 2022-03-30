@@ -1,0 +1,177 @@
+body{
+    background-color: #A9A9A9;
+    margin: 0%;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* General settings */
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+.images>img{
+    width: 99%;
+}
+
+#text{
+    margin-top: -40px;
+}
+
+.text>h1{
+    font-size: 25px;
+}
+
+.text>h2{
+    font-size: 20px;
+}
+
+.text>p{
+    font-size: 20px;
+}
+
+/* body auxiliary */
+.main{
+    text-align: center;
+}
+
+/* menu settings */
+.block-dishes{
+    background-color: whitesmoke;
+    margin-top: -30px;
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 20px;
+    border-radius: 10px;
+}
+
+.block-dishes2{
+    display: flex;
+    flex-direction: row;
+}
+
+.dishes{
+    width: 35%;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 20px;
+    border-radius: 10px;
+}
+
+.dishes>img{
+    width: 95%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.dishes>h1{
+    font-size: 20px;
+}
+
+.dishes>h2{
+    color: green;
+}
+
+/* data display */
+.Dados{ 
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Dados>input{ 
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.Dados>input:focus {
+    background-color: rgb(194, 194, 194);
+    outline-style: dashed;
+}
+
+.Dados>h1{
+    font-size: 20px;
+}
+
+/* calculate button settings */
+#calculator {
+    height: 50px;
+    background-color: rgb(46, 105, 182);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: 99%;
+    margin: auto;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quantity.buttons_added {
+    width: 100%;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+.minus{
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+    border-right: 0;
+}
+
+.plus{
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+    border-left: 0;
+}
+
+.input-text{
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+.qty text{
+    height: 39px;
+    padding: 0 5px;
+    background-color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding-left: 5%;
+    width: 20%;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}

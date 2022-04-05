@@ -8,8 +8,8 @@ var prods = [
 ];
 
 function javascript(){
-    end.innerHTML = '';
-    calculation.innerHTML = '';
+    exit2.innerHTML = '';
+    finalexit.innerHTML = '';
 
     var quantities = document.getElementsByName("quantity");
     var formatter = new Intl.NumberFormat('pt-BR', {
@@ -17,11 +17,29 @@ function javascript(){
         currency: 'BRL',
     });
 
-    var text = "Caro(a) " + document.querySelector('#name').value;
-    document.querySelector('#exit').innerHTML = text;
+    var name = "Caro(a) " + document.querySelector('#name').value;
+    document.querySelector('#exit').innerHTML = name;
 
-    var text1 = "Seguem os dados do seu pedido. <br><br> O seu Pedido é:";
-    document.querySelector('#exit1').innerHTML = text1;
+    var request = "<br><br>Seguem os dados do seu pedido. <br><br> O seu Pedido é:";
+    document.querySelector('#exit1').innerHTML = request;
 
-    calculation.innerHTML += "<br><br>Preço final R$ " + endPrice + ",00";
+    for (let input of quantities) {
+        exit2.innerHTML += `<br><li>Prato: ${prods[input.id-1].name} - Preço unitário: ${formatter.format(prods[input.id-1].price)} - Quantidade: ${input.value}`
+    }
+
+    var add = [30, 25, 22, 10, 8, 12];
+    var finalsum = 0;
+    var quantadd = 0;
+
+    for(i = 0 ; i < 6 ; i++){
+        quantrequeset = document.getElementById(i + 1).value;
+
+        if (quantrequeset != 0) {
+            var totalprice = add[i] * quantrequeset;
+            finalsum += totalprice;
+            quantadd += quantrequeset;
+        }
+    }
+
+    finalexit.innerHTML += "<br><br>Preço final R$ " + finalsum + ",00";
 }

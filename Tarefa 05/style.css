@@ -175,3 +175,39 @@ body{
     -moz-appearance: none;
     margin: 0;
 }
+
+#exit{
+    text-align: left;
+    font-weight: bolder;
+}
+
+#exit1{
+    text-align: left;
+}
+
+
+#exit2{
+    text-align: left;
+    list-style-type: disc;
+}
+
+#finalexit{
+    text-align: left;
+    font-weight: bolder;
+}
+
+.exitbutton{
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 99%;
+    margin-block-end: 3%;
+}
+
+.exits{
+    padding: 1%;
+}
